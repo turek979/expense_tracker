@@ -1,3 +1,4 @@
+import 'package:expense_tracker/expenses_list.dart';
 import 'package:flutter/material.dart';
 import 'package:expense_tracker/models/expense_model.dart';
 
@@ -24,8 +25,15 @@ class _ExpensesState extends State<Expenses> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(children: []),
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [
+            const Text('Chart'),
+            ExpensesList(expenses: _registeredExpenses)
+          ],
+        ),
+      ),
     );
   }
 }
