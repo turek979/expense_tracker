@@ -10,7 +10,7 @@ class ExpensesList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: expenses.length,
-      itemBuilder: (context, index) => const Text('Succ'),
+      itemBuilder: (context, index) => Text(expenses[index].title),
     );
   }
 }
