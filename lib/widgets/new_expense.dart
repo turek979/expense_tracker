@@ -33,40 +33,40 @@ class _NewExpenseState extends State<NewExpense> {
   }
 
   void _showDialog() {
-    if(Platform.isIOS) {
+    if (Platform.isIOS) {
       showCupertinoDialog(
-      context: context,
-      builder: (ctx) => CupertinoAlertDialog(
-        title: const Text('Invalid input'),
-        content: const Text(
-            'Please make sure that a valid title, amount, date and category is selected'),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.pop(ctx);
-            },
-            child: const Text('Okay'),
-          )
-        ],
-      ),
-    );
+        context: context,
+        builder: (ctx) => CupertinoAlertDialog(
+          title: const Text('Invalid input'),
+          content: const Text(
+              'Please make sure that a valid title, amount, date and category is selected'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(ctx);
+              },
+              child: const Text('Okay'),
+            )
+          ],
+        ),
+      );
     } else {
       showDialog(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Invalid input'),
-        content: const Text(
-            'Please make sure that a valid title, amount, date and category is selected'),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.pop(ctx);
-            },
-            child: const Text('Okay'),
-          )
-        ],
-      ),
-    );
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: const Text('Invalid input'),
+          content: const Text(
+              'Please make sure that a valid title, amount, date and category is selected'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(ctx);
+              },
+              child: const Text('Okay'),
+            )
+          ],
+        ),
+      );
     }
   }
 
@@ -77,7 +77,7 @@ class _NewExpenseState extends State<NewExpense> {
     if (_titleController.text.trim().isEmpty ||
         amountIsInvialid == true ||
         _selectedDate == null) {
-          _showDialog()
+      _showDialog();
       return;
     }
     widget.onAddExpense(
