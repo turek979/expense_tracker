@@ -1,16 +1,11 @@
 # expense_tracker
 
-A new Flutter project.
+An app designed to help you manage your expenses. Project utilises theming, state management, various inputs, data models and adaptiveness. It does not support pernament data storage for now.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+<div>
+<img src="assets/screenshots/Expense_View_Light.png" alt="Expense Screen Light" title="Expense Screen Light" style="display: inline-block; margin: 0 auto; width: 300px">
+<img src="assets/screenshots/Add_Expense.png" alt="Add Expense" title="Add Expense" style="display: inline-block; margin: 0 auto; width: 300px">
+<img src="assets/screenshots/Expense_View_Dark.png" alt="Expense Screen Dark" title="Expense Screen Dark" style="display: inline-block; margin: 0 auto; width: 300px">
+<img src="assets/screenshots/Expense_Horizontal.png" alt="Horizontal View" title="Horizontal View" style="display: inline-block; margin: 0 auto; height: 300px">
+</div>
