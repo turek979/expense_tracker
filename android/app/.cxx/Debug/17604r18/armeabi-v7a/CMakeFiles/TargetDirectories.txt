@@ -1,0 +1,2 @@
+C:/Projects/expense_tracker/android/app/.cxx/Debug/17604r18/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Projects/expense_tracker/android/app/.cxx/Debug/17604r18/armeabi-v7a/CMakeFiles/rebuild_cache.dir
